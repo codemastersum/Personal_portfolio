@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+      <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  -->
+ <link rel="stylesheet" href="css/style.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css "/>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <div class="left"><span class="white">SUMAN.</span></div> -->
+                <img src="suman.logo.jpg"class="logo">
+                 <ul id="sidemenu">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Project</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <!-- <i class=" fa-solid "></i> -->
+                    <!-- <i class="fa fa-times"></i>  -->
+                     <i class="fa fa-times" onclick="closemenu()"></i>
+
+                 </ul>  
+                 <i class="fa fa-bars" onclick="openmenu()"></i> 
+
+
+            </nav> 
+        </div>
+        <div id="Home" class="box">
+            <div class="text">
+
+                <div class="header-text ">
+                    
+                    <h1>Hi, My name is <br><span>Suman Kumari</span><br>And I'm a <span id="element"></span>
+                        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                        <!-- Setup and start animation!  -->
+                        <script>
+                            var typed = new Typed('#element', {
+                            strings: ['Front-End Developer', 'Back-End Developer', '&amp;  Coding Error Solver'],
+                            typeSpeed: 50,
+                            }); 
+                        </script>
+                    </h1>
+
+                    <!-- <span id="element"></span> -->
+                    <p>I like to Craft Solid and Scalable Front-End <br>and Back-End Products With Great User Experiences.</p>
+                </div>
+
+                <br>
+
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                </div>
+                    
+                <a href="resume 2.pdf" download class="btn btn2">Download CV</a>
+                
+            </div>
+             <div class="image">
+                <section class="firstSection">
+                    <div class="rightSection">
+                        <img src="my pic .jpg" alt="">
+                    </div>
+                </section>
+            </div> 
+            
+        </div>
+    </div>
+
+    
+
+        
+        
+   
+    <!-- ------------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pic.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Suman, currently pursuing my Bca From M.M.D.U Haryana. I'm Passionate about software Development, Purticularly in web technologies like the Front-End & Back-End Developer. Proficient in Html, Css, JavaScript, php, Bootstrap, and React, I love Coding and Error Solving. Eager to grow in the tech world, I enjoy Collaborating on impactful projects and am always ready to tackle new challenges.</p><br>
+
+                      <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('interests')">Interests</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div> 
+                     <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Front-End & Back-End Developer</li>
+                            <li><span>Error Solving</span><br>Data Structure & Algorithm With Java</li>
+                            <li><span>Coding</span><br>Html,Css,JavaScript,Php,Bootstrap,React</li>
+                        </ul>
+                    </div> 
+                     <div class="tab-contents" id="interests">
+                        <ul>
+                            <li><span>UI/UX</span><br>Web Designing & App Interfaces</li>
+                            <li><span>Web Development</span><br>Frontend & Backend Developer</li>
+                            <li><span>Error Solving</span><br>Data Structure & Algorithm</li>
+                        </ul>
+                    </div>   
+                     <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Current</span><br>Bca From M.M.D.U Mullana,Ambala,Haryana</li>
+                            <li><span>2022</span><br>I.Com From R.k College Dalmiyanagar Rohtas (Bihar)</li>
+                            <li><span>2020</span><br>Matriculation From S.R.T high School Jugsalai Jamshedpur (Jharkhand)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------services--------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+              <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Coding</h2>
+                <p>Currently, I'm immersing myself in the Web Development.As a developer, I'm passionate about technology and its endless possibilities. I'm eager to expand my skills and knowledge in the ever- evolving tech landscape.Collaborating with teams and contributing to impactful projects is where I thrive the most. I'm excited about the journey ahead and the opportunities to make a difference in the tech world.</p>
+                <a href="#">Learn more</a>
+              </div>  
+              <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Problem Solving</h2>
+                <p>I specialize in crafting efficient solutions to complex challenges across different areas. Whether it's designing algorithms or mastering data structures, I focus on solving problems using my strong skills in logic and understanding of data structures and algorithms. I excel in finding innovative and effective solutions.</p>
+                <a href="#">Learn more</a>
+              </div>  
+              <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Designing</h2>
+                <p>My journey began with mastering the fundamentals of HTML, CSS, and JavaScript, where I gained valuable hands-on experience.A web designer with a passion for creating beautiful and functional websites. Currently, I'm eagerly immersing myself in learning Bootstrap Css and Reactjs to elevate my web design skills to the next level.</p>
+                <a href="#">Learn more</a>
+              </div>  
+            </div>
+        </div>
+     </div>
+     <!-- ---------portfolio---------- -->
+      <div id="portfolio" class="Projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="mobile picture1.jpeg">
+                    <div class="layer">
+                    <h3>Project title: "Calculator"</h3>
+                    <p> Description: A calculator is a device that performs arithmetic operations on numbers. Basic calculators can do only addition, subtraction, multiplication and division mathematical calculations.
+
+                        However, more sophisticated calculators can handle exponential operations, square roots, logarithms, trigonometric functions and hyperbolic functions. Internally, some calculators perform all these functions by repeated addition processes.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="mobile picture 2.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Project title: "Portfolio Website"</h3>
+                        <p>My portfolio website serves as a comprehensive showcase of my educational background, services offered, past projects, and contact information. Additionally, it includes a feedback form where visitors can submit their comments and suggestions, with data securely stored in a Google Sheet using JavaScript fetch API for seamless communication.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                </div>
+                <div class="work">
+                    <img src="mobile picture 3.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Project title: "Tech Gun Webpage"</h3>
+                        <p> Description: Tech Gun is a YouTube channel catering to individuals aspiring to learn coding. Through my tutorials, accompanied by hands-on projects, you'll not just grasp the language, but also develop practical skills to create valuable applications</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ------contact------ -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> Email:-suman454587@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> Phone no.:-7765018997</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="resume 2.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <h5>Name:-</h5>
+                        <input type="text" name="Name" placeholder="your Name" required>
+                        <h5>Email:-</h5>
+                        <input type="email" name="Email" placeholder="your Email" required>
+                        <h5>Phone no.:-</h5>
+                        <input type="text" name="Phone no" placeholder="Phone no." required>
+                        <h5>Feedback:-</h5>
+                        <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button><br>
+                        
+                        
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        
+     </div>
+
+
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+          for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+         for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+        }
+            
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+       
+             
+            
+        }
+    </script>  
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwLRsBtGICgpL3d8gTpVvvR4jOrs2cY29JdLW4HrRJ2OrsX3Za5SXQLH1D3wpNm6-ob/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function (){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>
